@@ -4,26 +4,35 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Remove default margin */
 * {
-    margin: 0;
+  margin: 0;
 }
 
+a {
+  list-style: none;
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style: none;
+  text-decoration: none;
+}
 /* Prevent font size inflation */
 html {
-    -moz-text-size-adjust: none;
-    -webkit-text-size-adjust: none;
-    text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
 }
 
 /* Set core body defaults */
 body {
-    min-height: 100vh;
-    line-height: 1.5;
-    text-rendering: optimizeSpeed;
+  min-height: 100vh;
+  line-height: 1.5;
+  text-rendering: optimizeSpeed;
 }
 
 /* Balance text wrapping on headings */
@@ -33,12 +42,12 @@ h3,
 h4,
 h5,
 h6 {
-    text-wrap: balance;
+  text-wrap: balance;
 }
 
 /* Improve paragraph wrapping */
 p {
-    text-wrap: pretty;
+  text-wrap: pretty;
 }
 
 /* Make images easier to work with */
@@ -46,8 +55,8 @@ img,
 picture,
 svg,
 canvas {
-    display: block;
-    max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
 
 /* Inherit fonts for form controls */
@@ -55,26 +64,26 @@ input,
 button,
 textarea,
 select {
-    font: inherit;
+  font: inherit;
 }
 
 /* Avoid text overflow */
 textarea:not([rows]) {
-    min-height: 10em;
+  min-height: 10em;
 }
 
 /* Remove animations and transitions for people who prefer reduced motion */
 @media (prefers-reduced-motion: reduce) {
-    html:focus-within {
-        scroll-behavior: auto;
-    }
+  html:focus-within {
+    scroll-behavior: auto;
+  }
 
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        scroll-behavior: auto !important;
-        transition-duration: 0.01ms !important;
-    }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
 }
