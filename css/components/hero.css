@@ -1,0 +1,64 @@
+.hero-section {
+    background: url("../../images/banners/banner_hero.jpg") no-repeat center;
+    background-size: cover;
+   height: 500px;
+    position: relative;
+}
+
+.hero__overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 6rem;
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    color:#ffffff;
+    max-width:360px;
+    text-align: center;
+    gap:0.75rem;
+}
+
+.hero__content .hero-title {
+    font-size: 1.87rem;    
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 2px;
+}
+.hero__content .hero_subTitle {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+.btn {
+    font-size: 1.25rem;
+    width: 161px;
+    height: 55px;
+    border-radius: 25px;
+    color:#ffffff;
+    font-weight: 400;
+    padding:10px 20px;
+}
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    line-height:23px;
+}
+.btn-filled {
+    background-color: #ffffff;
+    color: #6329A2;
+}
+.btn:hover {
+    background-color: #6329A2;
+    color: #ffffff;
+}
+.hero_buttons{
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap:0.75rem;
+} 
