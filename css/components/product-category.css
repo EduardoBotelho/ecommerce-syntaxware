@@ -1,0 +1,61 @@
+.categories-section{
+    background-color: aqua;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:30px;
+}
+.category-card{
+    position: relative;
+    width: 317px;
+    height: 500px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.overlay{
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.25);
+    z-index: 1;
+}
+.category-name{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    box-sizing: border-box;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    text-align: center;
+}
+.category-name.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.casual {
+    background: url("../../images/produto/Casual.jpg") center / cover no-repeat;
+}
+
+.esporte {
+    background: url("../../images/produto/Esportivo.jpg") center / cover no-repeat;
+}
+
+.moderno {
+    background: url("../../images/produto/Colorido.jpg") center / cover no-repeat;
+}
+
+.futurista {
+    background: url("../../images/produto/Futurista.jpg") center / cover no-repeat;
+}
+
+
+.category-link{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
