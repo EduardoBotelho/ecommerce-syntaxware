@@ -1,8 +1,12 @@
 .hero-section {
-    background: url("../../images/banners/banner_hero.jpg") no-repeat center;
+    background: url("../../images/banners/banner_hero.jpg")no-repeat center;
     background-size: cover;
-   height: 500px;
+    height: 500px;
     position: relative;
+    display: flex;
+    gap:15px;
+    margin:40px;
+    border-radius: 20px;
 }
 
 .hero__overlay {
